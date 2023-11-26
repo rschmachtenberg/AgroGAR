@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a { 
+    color: currentColor;
+ }
+
+.logo {
+    width: 600px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.logo img {
+    width: 30%;
+    height: 0%;
+}
+
+.cabecalho {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(58, 57, 57, 0.788), rgba(57, 58, 57, 0.486)), url(./img/cabecalho.jpg);
+    position: fixed;
+    padding: 0rem;
+}
+
+.cabecalho .menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho .menu li a {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.cabecalho .menu li a:hover {
+    background-color: #333333;
+    border-bottom: 4px solid #8CC63F;
+    color: #8CC63F;
+}
+
+/* Seção principal */
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal {
+    background-color: #8CC63F;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-principal h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.conteudo-principal p {
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 0rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.img-principal {
+    height: 70vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(58, 57, 57, 0.788), rgba(55, 82, 55, 0.575)), url(./img/cabecalho.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #41552E;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: all 400ms ease-in;
+    margin-top: 1rem;
+}
+
+.btn button:hover {
+    border: 1px solid #4d7a12;
+    background-color: transparent;
+    color: #000000;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sobre */
+.sobre {
+    width: 100%;
+    padding-top: 60px;
+    background-color: #EBEEE7;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-sobre h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.conteudo-sobre h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.conteudo-sobre img {
+    max-width: 600px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding: 0.5rem;
+}
+/* Fim - Sobre */
+
+/* Gestão Rural */
+.gestao {
+    display: flex;
+    flex-direction: column;
+    background-color: #8CC63F;
+    padding-top: 60px;
+}
+
+.gestao-title h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.lista-gestao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.lista-gestao-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+.item-gestao {
+    text-align: center;
+    font-weight: 600;
+}
+
+.item-gestao img {
+    width: 100%;
+    max-width: 366px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.item-gestao p {
+    margin: 0;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.item-gestao h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.item-gestao iframe {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1025px) {
+    .lista-gestao {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .lista-beneficios {
+        gap: 0;
+    }
+
+    .item-gestao img {
+        max-width: 5rem;
+    }
+}
+/* Fim - Gestão Rural */
+
+.contato {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: Center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    padding-top: 60px;
+    padding-bottom: 4rem;
+    gap: 1rem;
+}
+
+.contato h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contato iframe {
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.conteudo-contato {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.conteudo-contato i {
+    margin-right: 1rem;
+}
+
+.conteudo-contato div {
+    cursor: pointer;
+}
+
+.conteudo-contato div:hover {
+    color: #8CC63F;
+}
+
+/* Orçamento - Cadastro */
+.orcamento {
+    background-color: #8CC63F;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.orcamento h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.orcamento form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+.orcamento p {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.orcamento input[type='name'],
+.orcamento input[type='email'],
+.orcamento textarea {
+    padding: 10px;
+    border: 1px solid #8bc34a;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.orcamento #enviar {
+    background-color: #41552E;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: all 400ms ease-in;
+    align-self: flex-end; 
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out 0s;
+}
+
+.orcamento #enviar:hover {
+    border: 1px solid #000000;
+    background-color: var(--green-3);
+    color: var(--black-1);
+}
+
+.conteudo-orcamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim - Orçamento - Cadastro */
+
+footer {
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .principal {
+        display: block;
+    }
+
+    .orcamento {
+        padding-bottom: 5rem;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 870px) {
+    .cabecalho {
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .cabecalho .menu {
+        display: none;
+    }
+
+    .logo h3 {
+       display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+
+    .cabecalho.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho.on .logo {
+        display: none;
+    }
+
+    .cabecalho.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .cabecalho.on .menu {
+        display: block;
+    }
+
+    .cabecalho.on .menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho.on .menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+    .cabecalho.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+
+    .cabecalho.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .cabecalho.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .conteudo-contato {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .conteudo-contato div {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .conteudo-principal h1 {
+        width: 350px;
+        text-align: center;
+    }
+
+    .conteudo-sobre h2 {
+        width: 350px;
+        text-align: center;
+    }
+
+    .conteudo-sobre h3 {
+        width: 350px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 645px) {
+    .conteudo-sobre img {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .contato iframe {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .conteudo-principal p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-contato{
+        width: 200px;
+    }
+
+    .conteudo-principal h2 {
+        width: 200px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    .conteudo-principal h1 {
+        font-size: 3rem;
+    }
+
+    .conteudo-principal h2 {
+        font-size: 2rem;
+    }
+
+    .conteudo-principal p {
+        text-align: center;
+        width: 200px;
+    }
+}

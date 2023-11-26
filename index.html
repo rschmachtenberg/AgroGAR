@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <title>AgroGAR | Sistema de Gestão Agrícola</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="./img/Agrogar_logo.png" alt="Cupcake">
+                <h3>Sistema de Gestão Agrícola</h3>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Página inicial</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#gestao">Gestão rural</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="principal" id="home">
+        <div class="conteudo-principal">
+            <div class="img-principal"></div>
+            <p>O AgroGAR é um <strong>software de gestão para propriedades rurais</strong> que
+                oferece controle abrangente e em tempo real das atividades do campo, da compra de insumos à venda da
+                produção agrícola.
+            </p>
+            <div class="btn">
+                    <button><a href="#orcamento">Solicite orçamento</a></button>
+                    <button>Teste grátis</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="conteudo-sobre">
+            <h2>A gestão da sua propriedade agora na palma da sua mão</h2>
+            <div>
+                <img src="img/smartphone.jpg">
+            </div>
+            <div>
+                <h3>Solução multiplataforma em nuvem!</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gestao" id="gestao">
+        <div class="lista-gestao">
+            <div class="item-gestao">
+                <h3>Planejamento de safra</h3>
+                <img src="img/planejamento.jpg" alt="Imagens de papéis e tablet." />
+                <p>Faça orçamento dos custos de plantio e acompanhe a produtividade do início ao fim da safra.</p>
+            </div>
+            <div class="item-gestao">
+                <h3>Controle de estoque</h3>
+                <img src="img/estoque.jpg" alt="Imagem de mãos segurando grões de soja." />
+                <p>Cada nota cadastrada adiciona automaticamente ao estoque do insumo.</p>
+            </div>
+            <div class="item-gestao">
+                <h3>Indicadores</h3>
+                <img src="img/indicadores.jpg" alt="Imagem de uma monitor com indicadores." />
+                <p>Solução com painéis de indicadores para avaliar os resultados e ajudar na tomada de decisão.</p>
+            </div>
+        </div>
+        <div class="gestao-title">
+            <h3> Entenda sobre a importância da coleta e organização de dados para gestão de propriedades rurais
+            </h3>
+        </div>
+        <div class="lista-gestao-video">
+            <div class="item-gestao">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JllNqNvojtE?si=gLDiHLoota23fKmI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="item-gestao">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/de2f_kSO8c8?si=2K8_kXIXyqdPVVEX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="contato" id="contato">
+        <h3>Contatos</h3>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d221964.36581617087!2d-52.200552!3d-29.627131!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700486981323!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="conteudo-contato">
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>(51) 98888-7777</span>
+            </div>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <span>@robertaa_s</span>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i>
+                <span>Roberta F. Schmachtenberg</span>
+            </div>
+        </div>
+    </section>
+    <section class="orcamento" id="orcamento">
+        <h3>Cadastre-se abaixo para receber mais informações:</h3>
+        <div class="conteudo-orcamento">
+            <form id="frm">
+                <p>
+                    Nome:
+                    <input placeholder="Nome" type="name" id="name" required />
+                </p>
+                <p>
+                    Email:
+                    <input placeholder="email@email.com" type="email" id="email" required />
+                </p>
+                <p>
+                    Mensagem:
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem..." id="message" cols="30"
+                        rows="10"></textarea>
+                </p>
+                <button type="submit" value="Enviar" id="enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h4>2023 AgroGAR | Criado por Roberta Francine Schmachtenberg</h4>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
